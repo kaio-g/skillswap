@@ -15,10 +15,10 @@ This is a learning project: profiles are fictional, exchanges are simulated, and
 
 ## Run locally
 
-Use a current Node.js LTS version compatible with the dependencies in package.json.
+Use Node.js 22 or newer. The checked-in package-lock.json records the dependency versions used for validation.
 
 ```sh
-npm install
+npm ci
 cp .env.example .env
 npm run dev
 ```
@@ -35,11 +35,31 @@ NODE_ENV=production npm start
 
 React, TypeScript, Vite, Tailwind CSS, Express, Google Gen AI SDK, and local storage.
 
-## Source archive
+## Validation
 
-The source was recovered directly from the Google AI Studio editor on October 21, 2026 after the built-in ZIP export and GitHub connection failed. The archive preserves the recovered source tree; node_modules, secrets, generated builds, and the AI Studio bun.lock were not included. Dependency versions and the hard-coded Gemini model reflect the original project and may need updating before running outside AI Studio.
+Validated locally on October 21, 2026:
 
-The recovered copy has not been installed or executed locally. This repository is a source backup, not a claim of production readiness.
+- npm installation completed after removing an unnecessary direct esbuild pin that conflicted with Vite.
+- TypeScript check (`npm run lint`) passed.
+- Production build (`npm run build`) passed.
+- Health endpoint and the no-key fallback endpoint responded successfully.
+- Browser smoke test matched the fictional Alex profile with Elena and displayed the labeled fallback results.
+
+Gemini-powered matching has not been validated successfully in this session. The original model name is preserved; availability depends on the API account and service. This is a demo, not a production service.
+
+## Screenshots
+
+![SkillSwap home](docs/images/home.png)
+
+![Matching demo](docs/images/matching.png)
+
+## My contribution and AI assistance
+
+I defined the cashless skill-exchange concept, selected the visual direction, guided AI-assisted implementation in Google AI Studio, and tested demo workflows. The project explores reciprocal matching and clear labeling of fictional profiles and simulated exchanges. Subsequent AI-assisted repository preparation recovered the source, documented setup, and verified installation, type checking, build, and fallback matching.
+
+## Source history
+
+The source was recovered directly from the Google AI Studio editor on October 21, 2026. `SkillSwap-source.zip` is the original recovery backup; the browsable files include the dependency compatibility correction and lockfile. No real API keys, node_modules, or generated builds are intended for this repository.
 
 ## Author
 
