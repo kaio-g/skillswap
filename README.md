@@ -45,7 +45,7 @@ Validated locally on October 21, 2026:
 - Health endpoint and the no-key fallback endpoint responded successfully.
 - Browser smoke test matched the fictional Alex profile with Elena and displayed the labeled fallback results.
 
-Gemini-powered matching has not been validated successfully in this session. The original model name is preserved; availability depends on the API account and service. This is a demo, not a production service.
+Gemini matching was validated locally on October 21, 2026 with `gemini-3.1-flash-lite`: tests with three candidates and the full eight-profile demo dataset returned Elena as a reciprocal Excel / English conversation match and a 60-minute session plan. The full-dataset request completed in about 5.1 seconds with `source: gemini`. The model can be changed with `GEMINI_MODEL` in `.env`. Requests have a 25-second timeout and no automatic retries; unavailable requests use the rule-based fallback. Provider availability remains variable (503 errors were also observed). This is a demo, not a production service.
 
 ## Screenshots
 

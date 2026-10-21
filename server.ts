@@ -11,6 +11,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
+const GEMINI_MODEL = process.env.GEMINI_MODEL?.trim() || 'gemini-3.1-flash-lite';
 
 app.use(express.json({ limit: '10mb' }));
 
@@ -23,6 +24,8 @@ if (isGeminiAvailable && rawApiKey) {
     ai = new GoogleGenAI({
       apiKey: rawApiKey,
       httpOptions: {
+        timeout: 25000,
+        retryOptions: { attempts: 1 },
         headers: {
           'User-Agent': 'aistudio-build',
         },
@@ -77,7 +80,7 @@ Rules:
 5. Provide a realistic 60-minute first-session plan.`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.8-flash',
+      model: GEMINI_MODEL,
       contents: prompt,
       config: {
         systemInstruction: `You are the SkillSwap Match Analysis Engine.
@@ -140,11 +143,12 @@ CRITICAL RULES:
       data: parsed,
     });
   } catch (err: any) {
-    console.error('Error in /api/match endpoint:', err);
+    // Do not expose provider diagnostics or request details to the browser.
+    console.error('Gemini matching unavailable:', err?.status || 'request_failed');
     return res.status(200).json({
       fallbackRequired: true,
       source: 'fallback',
-      error: err?.message || 'Gemini API call failed. Using rule-based fallback.',
+      error: 'AI matching is temporarily unavailable. Using rule-based matching instead.',
     });
   }
 });
