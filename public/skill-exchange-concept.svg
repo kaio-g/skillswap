@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF8F2" />
+      <stop offset="50%" stop-color="#F4EFE6" />
+      <stop offset="100%" stop-color="#ECE3D2" />
+    </linearGradient>
+
+    <!-- Forest & Terracotta Gradients -->
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142E23" />
+      <stop offset="100%" stop-color="#24543F" />
+    </linearGradient>
+
+    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D95D39" />
+      <stop offset="100%" stop-color="#B84926" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBB64E" />
+      <stop offset="100%" stop-color="#C9942C" />
+    </linearGradient>
+
+    <linearGradient id="exchangeArc1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#183B2B" />
+      <stop offset="50%" stop-color="#D95D39" />
+      <stop offset="100%" stop-color="#EBB64E" />
+    </linearGradient>
+
+    <linearGradient id="exchangeArc2" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#EBB64E" />
+      <stop offset="50%" stop-color="#D95D39" />
+      <stop offset="100%" stop-color="#183B2B" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#183B2B" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="450" rx="24" fill="url(#bgGrad)" />
+
+  <!-- Subtle Organic Ambient Circles in Background -->
+  <circle cx="160" cy="140" r="160" fill="#183B2B" fill-opacity="0.03" />
+  <circle cx="640" cy="150" r="170" fill="#D95D39" fill-opacity="0.04" />
+  <circle cx="400" cy="225" r="220" fill="#EBB64E" fill-opacity="0.02" />
+
+  <!-- Central Reciprocal Infinity Loop / Exchange Arc (Flowing Path) -->
+  <path d="M 230 190 C 310 90, 490 90, 570 190" stroke="url(#exchangeArc1)" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6" fill="none" opacity="0.85" />
+  <path d="M 570 230 C 490 330, 310 330, 230 230" stroke="url(#exchangeArc2)" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6" fill="none" opacity="0.85" />
+
+  <!-- Flow Direction Arrows -->
+  <polygon points="415,130 400,123 400,137" fill="#D95D39" />
+  <polygon points="385,290 400,283 400,297" fill="#183B2B" />
+
+  <!-- Table Base -->
+  <ellipse cx="400" cy="370" rx="310" ry="34" fill="#E4D9C7" />
+  <ellipse cx="400" cy="364" rx="300" ry="28" fill="#F0E8DC" />
+
+  <!-- ==================== LEFT PERSON: Alex (Teaching Excel, Learning Languages) ==================== -->
+  <g transform="translate(180, 160)">
+    <!-- Shadow -->
+    <ellipse cx="0" cy="180" rx="55" ry="12" fill="#183B2B" fill-opacity="0.08" />
+
+    <!-- Torso / Clothes (Forest Green) -->
+    <path d="M -45 180 C -45 120, -35 90, 0 90 C 35 90, 45 120, 45 180 Z" fill="url(#forestGrad)" />
+    <!-- Collar / Scarf -->
+    <path d="M -15 90 L 0 115 L 15 90 Z" fill="#F4EFE6" />
+
+    <!-- Neck & Head -->
+    <rect x="-8" y="65" width="16" height="28" rx="6" fill="#D8A88A" />
+    <circle cx="0" cy="50" r="32" fill="#E5B99C" />
+
+    <!-- Friendly Expression -->
+    <!-- Eyes smiling -->
+    <path d="M -14 48 Q -9 44 -4 48" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M 4 48 Q 9 44 14 48" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Smile -->
+    <path d="M -8 60 Q 0 68 8 60" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Hair -->
+    <path d="M -32 46 C -32 20, -15 15, 0 15 C 20 15, 34 22, 34 46 C 30 36, 15 32, -5 32 C -22 32, -30 40, -32 46 Z" fill="#2C3531" />
+
+    <!-- Left Arm & Laptop/Tablet Presentation -->
+    <path d="M 25 120 Q 55 130 75 140" stroke="#24543F" stroke-width="14" stroke-linecap="round" fill="none" />
+
+    <!-- Laptop / Spreadsheet Tile -->
+    <g transform="translate(60, 110)" filter="url(#dropShadow)">
+      <rect x="0" y="0" width="70" height="50" rx="6" fill="#FFFFFF" stroke="#183B2B" stroke-width="2" />
+      <rect x="0" y="0" width="70" height="12" rx="6" fill="#183B2B" />
+      <!-- Grid Lines -->
+      <line x1="22" y1="12" x2="22" y2="50" stroke="#E2D9C8" stroke-width="1.5" />
+      <line x1="46" y1="12" x2="46" y2="50" stroke="#E2D9C8" stroke-width="1.5" />
+      <line x1="0" y1="24" x2="70" y2="24" stroke="#E2D9C8" stroke-width="1.5" />
+      <line x1="0" y1="36" x2="70" y2="36" stroke="#E2D9C8" stroke-width="1.5" />
+      <!-- Green bar highlight in spreadsheet -->
+      <rect x="25" y="27" width="18" height="6" rx="2" fill="#2E7D32" />
+      <rect x="49" y="39" width="16" height="6" rx="2" fill="#D95D39" />
+      <circle cx="6" cy="6" r="2.5" fill="#FAF7F2" />
+      <circle cx="13" cy="6" r="2.5" fill="#FAF7F2" opacity="0.6" />
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT PERSON: Elena (Teaching Languages, Learning Tech) ==================== -->
+  <g transform="translate(620, 160)">
+    <!-- Shadow -->
+    <ellipse cx="0" cy="180" rx="55" ry="12" fill="#183B2B" fill-opacity="0.08" />
+
+    <!-- Torso / Clothes (Terracotta Orange) -->
+    <path d="M -45 180 C -45 120, -35 90, 0 90 C 35 90, 45 120, 45 180 Z" fill="url(#terracottaGrad)" />
+    <!-- Collar / Necklace -->
+    <path d="M -15 90 Q 0 110 15 90" stroke="#F4EFE6" stroke-width="3" fill="none" />
+
+    <!-- Neck & Head -->
+    <rect x="-8" y="65" width="16" height="28" rx="6" fill="#C98B66" />
+    <circle cx="0" cy="50" r="32" fill="#D99B77" />
+
+    <!-- Friendly Expression -->
+    <!-- Eyes smiling -->
+    <path d="M -14 48 Q -9 44 -4 48" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M 4 48 Q 9 44 14 48" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Smile -->
+    <path d="M -8 60 Q 0 68 8 60" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Curly / Wavy Hair (Auburn/Charcoal) -->
+    <path d="M -34 40 C -38 15, -18 10, 0 10 C 22 10, 38 18, 36 44 C 36 60, 32 75, 26 80 C 22 75, 26 60, 24 45 C 10 32, -15 32, -26 44 C -28 58, -25 75, -28 80 C -34 75, -36 55, -34 40 Z" fill="#4A3428" />
+
+    <!-- Arm reaching forward toward table -->
+    <path d="M -25 120 Q -55 130 -75 140" stroke="#B84926" stroke-width="14" stroke-linecap="round" fill="none" />
+
+    <!-- Acoustic Guitar leaning by side -->
+    <g transform="translate(48, 80) rotate(18)">
+      <!-- Guitar Body -->
+      <path d="M 0 40 C -18 40 -24 55 -20 70 C -18 78 -24 88 -22 100 C -18 116 18 116 22 100 C 24 88 18 78 20 70 C 24 55 18 40 0 40 Z" fill="#C48247" stroke="#8D5528" stroke-width="2" />
+      <!-- Soundhole -->
+      <circle cx="0" cy="78" r="9" fill="#3D2110" />
+      <circle cx="0" cy="78" r="11" stroke="#F4EFE6" stroke-width="1.5" fill="none" />
+      <!-- Neck -->
+      <rect x="-4" y="-10" width="8" height="52" fill="#8D5528" />
+      <!-- Headstock -->
+      <rect x="-6" y="-24" width="12" height="15" rx="2" fill="#5E381A" />
+    </g>
+
+    <!-- Language Conversation Bubble floating from Elena -->
+    <g transform="translate(-105, 55)" filter="url(#dropShadow)">
+      <path d="M 0 0 L 60 0 C 66 0 70 4 70 10 L 70 32 C 70 38 66 42 60 42 L 20 42 L 10 52 L 12 42 L 0 42 C -6 42 -10 38 -10 32 L -10 10 C -10 4 -6 0 0 0 Z" fill="#FFFFFF" stroke="#D95D39" stroke-width="2" />
+      <text x="30" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#183B2B" text-anchor="middle">Hello • Olá</text>
+    </g>
+  </g>
+
+  <!-- ==================== CENTER EXCHANGE EMBLEMS (Connected Knowledge Symbols) ==================== -->
+  <!-- Center Core Badge: Reciprocal Hands / Swap Symbol -->
+  <g transform="translate(400, 210)" filter="url(#dropShadow)">
+    <circle cx="0" cy="0" r="42" fill="#FAF7F2" stroke="#183B2B" stroke-width="3" />
+    <circle cx="0" cy="0" r="36" fill="#183B2B" />
+    <!-- Arrows Symbolizing Direct Trade -->
+    <path d="M -14 -6 L 14 -6 M 8 -12 L 14 -6 L 8 0" stroke="#EBB64E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 14 6 L -14 6 M -8 0 L -14 6 L -8 12" stroke="#D95D39" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Floating Orbiting Skill Emblems -->
+
+  <!-- Top-Center: Cooking / Craft (Chef Whisk & Bowl) -->
+  <g transform="translate(400, 70)" filter="url(#dropShadow)">
+    <circle cx="0" cy="0" r="24" fill="#FAF7F2" stroke="#D95D39" stroke-width="2" />
+    <!-- Whisk Icon -->
+    <path d="M 0 -12 L 0 -5 M -6 0 C -6 8, 6 8, 6 0 C 6 -5, -6 -5, -6 0 Z M 0 -5 L 0 6" stroke="#D95D39" stroke-width="2" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Top-Left: Excel Spreadsheet / Analytics -->
+  <g transform="translate(290, 85)" filter="url(#dropShadow)">
+    <circle cx="0" cy="0" r="22" fill="#FAF7F2" stroke="#183B2B" stroke-width="2" />
+    <text x="0" y="6" font-family="'Fraunces', serif" font-size="16" font-weight="bold" fill="#183B2B" text-anchor="middle">fx</text>
+  </g>
+
+  <!-- Top-Right: Photography / Camera Lens -->
+  <g transform="translate(510, 85)" filter="url(#dropShadow)">
+    <circle cx="0" cy="0" r="22" fill="#FAF7F2" stroke="#D95D39" stroke-width="2" />
+    <rect x="-10" y="-7" width="20" height="15" rx="3" fill="#D95D39" />
+    <circle cx="0" cy="0" r="4.5" fill="#FAF7F2" />
+    <circle cx="5" cy="-9" r="1.5" fill="#FAF7F2" />
+  </g>
+
+  <!-- Bottom-Left: Computer IT Support -->
+  <g transform="translate(295, 335)" filter="url(#dropShadow)">
+    <circle cx="0" cy="0" r="22" fill="#FAF7F2" stroke="#183B2B" stroke-width="2" />
+    <rect x="-10" y="-8" width="20" height="13" rx="2" stroke="#183B2B" stroke-width="2" fill="none" />
+    <line x1="-12" y1="8" x2="12" y2="8" stroke="#183B2B" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Bottom-Right: Resume & Career Writing -->
+  <g transform="translate(505, 335)" filter="url(#dropShadow)">
+    <circle cx="0" cy="0" r="22" fill="#FAF7F2" stroke="#EBB64E" stroke-width="2" />
+    <rect x="-7" y="-9" width="14" height="18" rx="2" stroke="#C9942C" stroke-width="2" fill="none" />
+    <line x1="-3" y1="-4" x2="3" y2="-4" stroke="#C9942C" stroke-width="1.5" />
+    <line x1="-3" y1="0" x2="3" y2="0" stroke="#C9942C" stroke-width="1.5" />
+    <line x1="-3" y1="4" x2="1" y2="4" stroke="#C9942C" stroke-width="1.5" />
+  </g>
+
+  <!-- Coffee Cups on Table (Warm Community Touch) -->
+  <g transform="translate(350, 360)">
+    <rect x="-8" y="-12" width="16" height="14" rx="3" fill="#D95D39" />
+    <path d="M 8 -9 C 11 -9 11 -3 8 -3" stroke="#D95D39" stroke-width="2" fill="none" />
+    <!-- Steam -->
+    <path d="M -3 -15 Q -5 -19 -3 -22" stroke="#D95D39" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6" />
+    <path d="M 2 -15 Q 0 -19 2 -22" stroke="#D95D39" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6" />
+  </g>
+
+  <g transform="translate(450, 360)">
+    <rect x="-8" y="-12" width="16" height="14" rx="3" fill="#183B2B" />
+    <path d="M 8 -9 C 11 -9 11 -3 8 -3" stroke="#183B2B" stroke-width="2" fill="none" />
+    <!-- Steam -->
+    <path d="M -2 -15 Q 0 -19 -2 -22" stroke="#183B2B" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6" />
+    <path d="M 3 -15 Q 1 -19 3 -22" stroke="#183B2B" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6" />
+  </g>
+
+  <!-- Bottom Philosophical Inscription Banner -->
+  <g transform="translate(400, 418)">
+    <rect x="-180" y="-16" width="360" height="30" rx="15" fill="#183B2B" />
+    <text x="0" y="4" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FAF7F2" text-anchor="middle" letter-spacing="0.8">
+      1 HOUR OF TEACHING ⇄ 1 HOUR OF LEARNING
+    </text>
+  </g>
+</svg>

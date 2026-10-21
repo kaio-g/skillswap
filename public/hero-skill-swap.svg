@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%" fill="none" aria-label="Editorial illustration of two people at a wooden table exchanging skills: one teaching a spreadsheet on a laptop while the other shares language flashcards, connected by subtle reciprocal curved arrows.">
+  <defs>
+    <!-- Background & Warm Ambient Gradients -->
+    <linearGradient id="heroBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF8F2" />
+      <stop offset="100%" stop-color="#EFE7DA" />
+    </linearGradient>
+
+    <linearGradient id="blobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8DFD0" />
+      <stop offset="100%" stop-color="#DDD2BF" />
+    </linearGradient>
+
+    <!-- Palette Gradients -->
+    <linearGradient id="forestSweater" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#183B2B" />
+      <stop offset="100%" stop-color="#24543F" />
+    </linearGradient>
+
+    <linearGradient id="terracottaTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D95D39" />
+      <stop offset="100%" stop-color="#B84826" />
+    </linearGradient>
+
+    <linearGradient id="tableWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E4D7C2" />
+      <stop offset="50%" stop-color="#DFCDB5" />
+      <stop offset="100%" stop-color="#D4C2A7" />
+    </linearGradient>
+
+    <linearGradient id="flowArrow1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#183B2B" />
+      <stop offset="70%" stop-color="#D95D39" />
+    </linearGradient>
+
+    <linearGradient id="flowArrow2" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D95D39" />
+      <stop offset="70%" stop-color="#183B2B" />
+    </linearGradient>
+
+    <!-- Soft Ambient Shadow -->
+    <filter id="heroDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#183B2B" flood-opacity="0.08" />
+    </filter>
+
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1F2421" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <!-- Organic Background Backdrop Shape -->
+  <path d="M 60 210 C 50 100, 150 40, 290 45 C 440 50, 550 110, 540 240 C 530 380, 430 450, 270 445 C 130 440, 70 340, 60 210 Z" fill="url(#blobGrad)" opacity="0.65" />
+
+  <!-- Warm Community Atmosphere Elements (Window Light & Leaf) -->
+  <path d="M 520 80 C 545 100, 560 140, 555 170 C 540 150, 530 115, 520 80 Z" fill="#24543F" opacity="0.15" />
+  <path d="M 545 125 C 575 135, 585 165, 580 190 C 565 175, 550 150, 545 125 Z" fill="#24543F" opacity="0.2" />
+
+  <!-- Shared Table Surface -->
+  <ellipse cx="300" cy="390" rx="270" ry="42" fill="url(#tableWood)" filter="url(#heroDropShadow)" />
+  <ellipse cx="300" cy="385" rx="265" ry="38" fill="#ECE1CF" />
+
+  <!-- Subtle Wood Grain lines -->
+  <path d="M 120 386 C 220 394, 380 394, 480 386" stroke="#D3C0A3" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5" />
+  <path d="M 170 398 C 260 404, 340 404, 430 398" stroke="#D3C0A3" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.4" />
+
+  <!-- ==================== LEFT PERSON: Teaching Spreadsheet ==================== -->
+  <g transform="translate(135, 175)">
+    <!-- Body Shadow -->
+    <ellipse cx="0" cy="205" rx="50" ry="12" fill="#183B2B" fill-opacity="0.08" />
+
+    <!-- Torso / Forest Green Sweater -->
+    <path d="M -48 205 C -50 145, -38 105, 0 105 C 38 105, 50 145, 48 205 Z" fill="url(#forestSweater)" />
+    <!-- Sweater V-Neck Insert -->
+    <path d="M -14 105 L 0 128 L 14 105 Z" fill="#FAF7F2" />
+
+    <!-- Neck & Head -->
+    <rect x="-9" y="80" width="18" height="28" rx="8" fill="#D29E7E" />
+    <circle cx="0" cy="62" r="32" fill="#E2AE8F" />
+
+    <!-- Stylized Facial Features (Warm, friendly, looking toward laptop) -->
+    <!-- Eyes (gentle arcs) -->
+    <path d="M -12 60 Q -7 56 -2 60" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M 6 60 Q 11 56 16 60" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Warm smile -->
+    <path d="M -6 74 Q 2 82 10 74" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Hair (neat modern sweep) -->
+    <path d="M -32 58 C -34 26, -14 24, 4 24 C 22 24, 36 32, 34 56 C 28 46, 14 42, -4 42 C -22 42, -28 50, -32 58 Z" fill="#2C3531" />
+
+    <!-- Arm gesturing toward the laptop screen -->
+    <path d="M 28 135 Q 60 145 84 158" stroke="#24543F" stroke-width="15" stroke-linecap="round" fill="none" />
+    <!-- Hand gently pointing -->
+    <ellipse cx="88" cy="160" rx="8" ry="7" fill="#E2AE8F" />
+  </g>
+
+  <!-- ==================== LAPTOP WITH SPREADSHEET (Left Center) ==================== -->
+  <g transform="translate(195, 290)" filter="url(#cardShadow)">
+    <!-- Laptop Base -->
+    <path d="M 5 70 L 105 70 L 115 76 L -5 76 Z" fill="#9BA8A1" />
+    <rect x="42" y="74" width="26" height="2" rx="1" fill="#718078" />
+
+    <!-- Laptop Screen Frame -->
+    <rect x="12" y="10" width="86" height="60" rx="6" fill="#202A24" stroke="#183B2B" stroke-width="1.5" />
+    <!-- Inner Screen Display -->
+    <rect x="16" y="14" width="78" height="52" rx="3" fill="#FFFFFF" />
+
+    <!-- Spreadsheet Interface on Screen (No text, pure visual grid) -->
+    <!-- Spreadsheet Header Bar -->
+    <rect x="16" y="14" width="78" height="11" rx="3" fill="#183B2B" />
+    <circle cx="23" cy="19.5" r="2" fill="#FAF7F2" />
+    <circle cx="29" cy="19.5" r="2" fill="#FAF7F2" opacity="0.6" />
+
+    <!-- Grid Columns & Rows -->
+    <line x1="38" y1="25" x2="38" y2="66" stroke="#E3DACB" stroke-width="1.2" />
+    <line x1="62" y1="25" x2="62" y2="66" stroke="#E3DACB" stroke-width="1.2" />
+    <line x1="16" y1="38" x2="94" y2="38" stroke="#E3DACB" stroke-width="1.2" />
+    <line x1="16" y1="52" x2="94" y2="52" stroke="#E3DACB" stroke-width="1.2" />
+
+    <!-- Visual Data Cells (Bar graphs and color chips, no numbers/text) -->
+    <rect x="42" y="29" width="16" height="5" rx="1.5" fill="#2E7D32" />
+    <rect x="66" y="29" width="22" height="5" rx="1.5" fill="#D95D39" />
+    <rect x="20" y="42" width="14" height="6" rx="1.5" fill="#24543F" opacity="0.8" />
+    <rect x="42" y="42" width="12" height="6" rx="1.5" fill="#EBB64E" />
+    <rect x="66" y="42" width="18" height="6" rx="1.5" fill="#2E7D32" />
+    <rect x="42" y="56" width="17" height="6" rx="1.5" fill="#D95D39" opacity="0.85" />
+  </g>
+
+  <!-- ==================== RIGHT PERSON: Sharing Language Cards ==================== -->
+  <g transform="translate(465, 175)">
+    <!-- Body Shadow -->
+    <ellipse cx="0" cy="205" rx="50" ry="12" fill="#183B2B" fill-opacity="0.08" />
+
+    <!-- Torso / Terracotta Top -->
+    <path d="M -48 205 C -50 145, -38 105, 0 105 C 38 105, 50 145, 48 205 Z" fill="url(#terracottaTop)" />
+    <!-- Boatneck Collar -->
+    <path d="M -16 105 Q 0 120 16 105" stroke="#FAF7F2" stroke-width="2.5" fill="none" />
+
+    <!-- Neck & Head -->
+    <rect x="-9" y="80" width="18" height="28" rx="8" fill="#B77D57" />
+    <circle cx="0" cy="62" r="32" fill="#C88E67" />
+
+    <!-- Stylized Facial Features (Warm, friendly, engaged) -->
+    <!-- Eyes (smiling arcs looking at partner) -->
+    <path d="M -16 60 Q -11 56 -6 60" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M 2 60 Q 7 56 12 60" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Warm smile -->
+    <path d="M -10 74 Q -2 82 6 74" stroke="#1F2421" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Curly Hair / Updo -->
+    <path d="M -34 50 C -40 20, -18 12, 0 12 C 22 12, 38 20, 36 48 C 36 64, 30 78, 24 82 C 20 76, 24 64, 22 48 C 10 36, -12 36, -24 48 C -26 62, -22 76, -26 82 C -32 78, -34 62, -34 50 Z" fill="#3D291D" />
+    <circle cx="0" cy="10" r="15" fill="#3D291D" />
+
+    <!-- Arm reaching forward with flashcard -->
+    <path d="M -26 135 Q -60 148 -82 165" stroke="#B84826" stroke-width="15" stroke-linecap="round" fill="none" />
+    <!-- Hand holding card -->
+    <ellipse cx="-86" cy="168" rx="8" ry="7" fill="#C88E67" />
+  </g>
+
+  <!-- ==================== LANGUAGE-LEARNING STUDY FLASHCARDS (Right Center) ==================== -->
+  <g transform="translate(350, 305)" filter="url(#cardShadow)">
+    <!-- Background Card 1 (Tilted right) -->
+    <g transform="rotate(12 35 30)">
+      <rect x="5" y="0" width="54" height="74" rx="7" fill="#FFFFFF" stroke="#D95D39" stroke-width="1.5" />
+      <rect x="12" y="8" width="40" height="26" rx="4" fill="#FBF0EC" />
+      <!-- Soundwave / dialogue emblem on card -->
+      <path d="M 22 21 C 24 16, 28 16, 30 21 C 32 26, 36 26, 38 21" stroke="#D95D39" stroke-width="2" stroke-linecap="round" fill="none" />
+      <!-- Flashcard guideline rows (abstract lines) -->
+      <rect x="14" y="42" width="36" height="4" rx="2" fill="#E2D9CB" />
+      <rect x="14" y="52" width="28" height="4" rx="2" fill="#E2D9CB" />
+      <circle cx="48" cy="62" r="3" fill="#D95D39" opacity="0.8" />
+    </g>
+
+    <!-- Background Card 2 (Tilted slightly left) -->
+    <g transform="rotate(-6 10 20)">
+      <rect x="-15" y="6" width="54" height="74" rx="7" fill="#FFFFFF" stroke="#183B2B" stroke-width="1.5" />
+      <rect x="-8" y="14" width="40" height="26" rx="4" fill="#EBF2EE" />
+      <!-- Speech bubble contour emblem -->
+      <path d="M 4 21 Q 12 16 20 21 Q 20 30 12 30 L 7 34 L 8 30 Q 4 30 4 21 Z" fill="#24543F" opacity="0.85" />
+      <!-- Flashcard rows -->
+      <rect x="-6" y="48" width="36" height="4" rx="2" fill="#E2D9CB" />
+      <rect x="-6" y="58" width="24" height="4" rx="2" fill="#E2D9CB" />
+    </g>
+
+    <!-- Foreground Card (Held forward, centered) -->
+    <g transform="translate(10, -8) rotate(4)">
+      <rect x="0" y="0" width="56" height="76" rx="7" fill="#FAF7F2" stroke="#D95D39" stroke-width="2" />
+      <rect x="7" y="7" width="42" height="28" rx="4" fill="#F8EAE4" />
+      <!-- Two conversational bubbles interacting -->
+      <circle cx="21" cy="21" r="7" fill="#183B2B" opacity="0.85" />
+      <circle cx="33" cy="20" r="6" fill="#D95D39" opacity="0.9" />
+      <!-- Translation lines -->
+      <rect x="10" y="44" width="36" height="4" rx="2" fill="#183B2B" opacity="0.8" />
+      <rect x="10" y="53" width="28" height="4" rx="2" fill="#D95D39" opacity="0.8" />
+      <rect x="10" y="62" width="20" height="4" rx="2" fill="#E2D9CB" />
+    </g>
+  </g>
+
+  <!-- ==================== CURVED TWO-WAY RECIPROCAL ARROWS (The Key Concept) ==================== -->
+  <!-- Top Arc: Flowing from Laptop Spreadsheet toward Language Cards -->
+  <g>
+    <path d="M 285 245 C 310 185, 375 190, 395 245" stroke="url(#flowArrow1)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 5" fill="none" />
+    <!-- Arrowhead pointing toward language cards -->
+    <polygon points="402,252 390,240 401,235" fill="#D95D39" />
+    <!-- Small glowing energy pulse on curve -->
+    <circle cx="340" cy="205" r="4" fill="#D95D39" />
+    <circle cx="340" cy="205" r="7" fill="#D95D39" opacity="0.25" />
+  </g>
+
+  <!-- Bottom Arc: Flowing from Language Cards back toward Laptop Spreadsheet -->
+  <g>
+    <path d="M 375 285 C 350 340, 285 335, 265 285" stroke="url(#flowArrow2)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 5" fill="none" />
+    <!-- Arrowhead pointing back toward laptop -->
+    <polygon points="258,278 270,290 259,295" fill="#183B2B" />
+    <!-- Small glowing energy pulse on curve -->
+    <circle cx="320" cy="322" r="4" fill="#183B2B" />
+    <circle cx="320" cy="322" r="7" fill="#183B2B" opacity="0.25" />
+  </g>
+
+  <!-- ==================== TABLE DETAILS (Ceramic Mugs & Atmosphere) ==================== -->
+  <!-- Warm Terracotta Mug (Left side) -->
+  <g transform="translate(145, 370)">
+    <rect x="-8" y="-14" width="16" height="15" rx="3.5" fill="#D95D39" />
+    <path d="M -8 -11 C -12 -11 -12 -4 -8 -4" stroke="#D95D39" stroke-width="2" fill="none" />
+    <!-- Gentle steam curl -->
+    <path d="M -2 -18 Q -4 -22 -1 -26" stroke="#D95D39" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.5" />
+  </g>
+
+  <!-- Forest Green Mug (Right side) -->
+  <g transform="translate(485, 370)">
+    <rect x="-8" y="-14" width="16" height="15" rx="3.5" fill="#183B2B" />
+    <path d="M 8 -11 C 12 -11 12 -4 8 -4" stroke="#183B2B" stroke-width="2" fill="none" />
+    <!-- Gentle steam curl -->
+    <path d="M 1 -18 Q -1 -22 2 -26" stroke="#183B2B" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.5" />
+  </g>
+
+  <!-- Potted Small Succulent in Background Center (Touches of community life) -->
+  <g transform="translate(305, 362)">
+    <polygon points="-7,5 7,5 5,-5 -5,-5" fill="#E4D7C2" stroke="#C9B89D" stroke-width="1" />
+    <ellipse cx="0" cy="-7" rx="3" ry="5" fill="#2E7D32" />
+    <ellipse cx="-4" cy="-6" rx="2.5" ry="4" fill="#388E3C" transform="rotate(-25 -4 -6)" />
+    <ellipse cx="4" cy="-6" rx="2.5" ry="4" fill="#388E3C" transform="rotate(25 4 -6)" />
+  </g>
+</svg>
