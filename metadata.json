@@ -1,0 +1,8 @@
+{
+  "name": "SkillSwap - Direct Skill Exchange Without Money",
+  "description": "A community skill exchange platform where people trade knowledge directly without money. Discover complementary matches, organize sessions, and learn together.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
